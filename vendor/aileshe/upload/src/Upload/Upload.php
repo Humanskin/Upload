@@ -72,7 +72,7 @@ class Upload{
      * @param  String  $host     文件访问域名
      * @return Int  [0上传提交空文件  -1上传失败  -2文件存储路径不合法  -5验证token为空]
      */
-    public function save($storage = NULL, $allow = NULL, $host = NULL){
+    public function save($storage = "./upload_images", $allow = NULL, $host = NULL){
         # token 验证
         if($this->token != NULL){
             if(!isset($_POST['token']) || $_POST['token'] != $this->token){
