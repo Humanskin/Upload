@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Dj\\' => array($vendorDir . '/aileshe/upload/src/Upload'),
+    'Dj\\' => array($baseDir . '/src/Upload'),
 );
