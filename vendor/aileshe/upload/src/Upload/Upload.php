@@ -9,7 +9,7 @@ namespace Dj;
 class Upload{
     public $token = NULL;    # 上传验证口令(string)
     public $frm_name = NULL; # 文件表单name值(string)
-    public $ext = NULL;      # 允许上传文件的后缀(一维的索引数组)
+    public $ext = array('png','jpeg','jpg');      # 允许上传文件的后缀(一维的索引数组)
     public $size = NULL;     # 允许上传文件的大小(int)
     public $mime = NULL;     # 允许上传文件的MIME(一维的索引数组)
     public $host = NULL;     # 文件访问域名(http://www.a.com)
